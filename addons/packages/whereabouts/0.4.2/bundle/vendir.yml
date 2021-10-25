@@ -1,0 +1,10 @@
+apiVersion: vendir.k14s.io/v1alpha1
+kind: Config
+directories:
+  - path: config/upstream
+    contents:
+    - path: .
+      git:
+        url: https://github.com/k8snetworkplumbingwg/whereabouts
+        ref: origin/master
+      newRootPath: doc/crds
